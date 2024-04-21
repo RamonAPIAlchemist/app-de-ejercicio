@@ -1,0 +1,90 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #192841, #304352);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 90%; /* Cambiado */
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #474747, #e3e3e3);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+#activity {
+  margin-bottom: 50px;
+}
+
+#activity p {
+  font-size: 24px;
+  color: #000000;
+  margin: 10px 0;
+}
+
+#activity span {
+  font-weight: bold;
+  color: #020202;
+}
+
+#buttons {
+  display: flex; /* Nuevo */
+  justify-content: center; /* Nuevo */
+}
+
+#buttons button {
+  margin: 20px;
+  padding: 15px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#buttons button:hover {
+  background: linear-gradient(to bottom, #0056b3, #003c80);
+}
+
+#stop {
+  background: linear-gradient(to bottom, #dc3545, #bd2130);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.3);
+}
+
+#stop:hover {
+  background: linear-gradient(to bottom, #bd2130, #9e1c26);
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  #activity p {
+    font-size: 20px;
+    margin: 8px 0;
+  }
+  
+  #buttons button {
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+}
